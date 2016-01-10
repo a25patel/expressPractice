@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p How to be hipsa-licious 
+  
+  p Write a sentence or two, and we'll hipstafy it for you!
+   
+  form(action='/hippie' method='post')
+    textarea(rows='10' cols='70' name='hipstafied')
+    input(type='submit' value='hipstafy!')
